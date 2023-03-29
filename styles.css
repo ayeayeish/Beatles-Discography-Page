@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://i.pinimg.com/originals/fa/93/3e/fa933e99687e491b193cc96cac68ae2e.jpg);
+  background-position: bottom left;
+  background-attachment: fixed;
+}
+
+/* Home Page CSS */
+
+.album-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.album-gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.image_img {
+  display: block;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Makes the overlay hidden by default */
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+
+.image_overlay:hover {
+  opacity: 1; /* When hovering will show overlay */
+  transition: opacity 0.3s;
+}
+
+.image_title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+}
+
+.image_description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  margin-bottom: 20px;
+}
+
